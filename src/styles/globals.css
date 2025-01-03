@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #184b6728, #1e63d9); /* Vibrant gradient */
+  color: #fff;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  padding: 20px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #13120d;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Subheading Styling */
+.subheading {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #583605;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Score Display */
+.score {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.715);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card Styling */
+.card {
+  background: #000;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.card img {
+  max-width: 400px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+
+
+
