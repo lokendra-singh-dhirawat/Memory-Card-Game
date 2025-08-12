@@ -1,86 +1,28 @@
-# React + Vite + TypeScript Template (react-vite-ui)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Dan5py/react-vite-ui/blob/main/LICENSE)
+🃏 One-Chance Memory Card Game
 
-A React + Vite template powered by shadcn/ui.
+A unique twist on the classic memory game. Click each card once—clicking any card twice ends the game instantly.
+Your current score increases with every unique click. Your best score is saved and shown across sessions.
+🎯 Features
 
-## 🎉 Features
+    One-chance rule: clicking a previously clicked card = Game Over
 
-- **React** - A JavaScript library for building user interfaces.
-- **Vite** - A fast, opinionated frontend build tool.
-- **TypeScript** - A typed superset of JavaScript that compiles to plain JavaScript.
-- **Tailwind CSS** - A utility-first CSS framework.
-- **Tailwind Prettier Plugin** - A Prettier plugin for formatting Tailwind CSS classes.
-- **ESLint** - A pluggable linting utility for JavaScript and TypeScript.
-- **PostCSS** - A tool for transforming CSS with JavaScript.
-- **Autoprefixer** - A PostCSS plugin to parse CSS and add vendor prefixes.
-- **shadcn/ui** - Beautifully designed components that you can copy and paste into your apps.
+    Current score (this run) + Best score (persisted)
 
-## ⚙️ Prerequisites
+    Randomized card layout every game
 
-Make sure you have the following installed on your development machine:
+    Responsive design (desktop & mobile)
 
-- Node.js (version 16 or above)
-- pnpm (package manager)
+    Quick restart
 
-## 🚀 Getting Started
+🚦 Scoring & Rules
 
-Follow these steps to get started with the react-vite-ui template:
+    +1 point for every unique card click.
 
-1. Clone the repository:
+    Lose if you click any card you’ve already clicked in the same round.
 
-   ```bash
-   git clone https://github.com/dan5py/react-vite-ui.git
-   ```
+    Win if you click all unique cards without repeating any.
 
-2. Navigate to the project directory:
+    Best score updates automatically when you beat your previous best.
 
-   ```bash
-   cd react-vite-ui
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   pnpm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   pnpm dev
-   ```
-
-## 📜 Available Scripts
-
-- pnpm dev - Starts the development server.
-- pnpm build - Builds the production-ready code.
-- pnpm lint - Runs ESLint to analyze and lint the code.
-- pnpm preview - Starts the Vite development server in preview mode.
-
-## 📂 Project Structure
-
-The project structure follows a standard React application layout:
-
-```python
-react-vite-ui/
-  ├── node_modules/      # Project dependencies
-  ├── public/            # Public assets
-  ├── src/               # Application source code
-  │   ├── components/    # React components
-  │   │   └── ui/        # shadc/ui components
-  │   ├── styles/        # CSS stylesheets
-  │   ├── lib/           # Utility functions
-  │   ├── App.tsx        # Application entry point
-  │   └── index.tsx      # Main rendering file
-  ├── eslint.config.js     # ESLint configuration
-  ├── index.html         # HTML entry point
-  ├── postcss.config.js  # PostCSS configuration
-  ├── tailwind.config.ts # Tailwind CSS configuration
-  ├── tsconfig.json      # TypeScript configuration
-  └── vite.config.ts     # Vite configuration
-```
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](https://choosealicense.com/licenses/mit/) file for details.
+    Previous score shows your last game’s final score after you restart.
