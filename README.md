@@ -4,7 +4,8 @@
 A unique twist on the classic memory game. Click each card once—clicking any card twice ends the game instantly.
 Your current score increases with every unique click. Your best score is saved and shown across sessions.
 
-Live Demo -<memorytocard.netlify.app>
+Live Demo -<a href="memorytocard.netlify.app" target="_blank" rel="noopener noreferrer">Live demo</a>
+
 
 🎯 Features
 
